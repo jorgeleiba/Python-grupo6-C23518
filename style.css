@@ -1,3 +1,60 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
+
+nav ul {
+    display: flex;
+    list-style: none;
+    }
+    
+    nav ul li a {
+    padding: 1em;
+    color: #21AEBD;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    }
+    
+    nav ul li a:hover {
+    color: red;
+    }
+    
+    /* Estilos del footer */
+    footer {
+    background-color: #EC66AD;
+    padding: 10px 0;
+    
+    }
+    
+    .row-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    
+    .flex-column-form {
+    
+    flex-basis: 50%;
+    margin-right: 50px;
+    }
+    
+    .redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    list-style: none;
+    padding: 0;
+    }
+    
+    .redes li {
+    margin-right: 20px;
+    }
+    
+    .redes li:last-child {
+    margin-right: 0;
+    }
+    
+    .redes img {
+    width: 20px;
+    height: 20px;
+    }
