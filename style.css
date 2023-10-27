@@ -1,60 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #1C6AB2;
+}
+
+html{
+    height: 100%;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(235, 235, 235);
+}
+
+/*#region*/ /*Barra de navegacion*/
+
+nav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+
+.nav_fondo{
+    display: flex;
+    background-color: #21AEBD;
+}
+
+#logo_nav{
+    width: 8rem;
+    border-radius: 50%;
+    padding: 1rem;
 }
 
 nav ul {
     display: flex;
+    align-items:center;
     list-style: none;
-    }
+}
     
-    nav ul li a {
+nav ul li a {
     padding: 1em;
-    color: #21AEBD;
+    color: #FFFFFF;
     text-decoration: none;
     transition: color 0.3s ease;
-    }
+}
     
-    nav ul li a:hover {
-    color: red;
-    }
+nav ul li a:hover {
+     color: red;
+}
+
+/*#endregion*/
     
-    /* Estilos del footer */
-    footer {
-    background-color: #EC66AD;
-    padding: 10px 0;
-    
-    }
-    
-    .row-flex {
+/*#region*/ /*Estilos del main*/
+
+main{
+    padding: 5%;
+    padding-top: 25vh;
+}
+
+/*#endregion*/
+
+/*#region*/ /*Formulario*/
+
+.row-flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    }
-    
-    .flex-column-form {
-    
+}
+
+.flex-column-form {
     flex-basis: 50%;
     margin-right: 50px;
-    }
+}
+/*#endregion*/
+
+/*#region*/ /*Etiquetas semánticas*/
+
+h1{
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+h2{
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+p, h3{
+    padding-top: 1rem;
+    padding-left: 2rem;
+}
+
+footer h3{
+    padding-top: 2rem;
+}
+
+img{
+    width: 40%;
+    border-radius: 15px;
+}
+
+#imagen_index{
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+/*#endregion*/
+
+/*#region*/ /*estilos del footer*/
     
-    .redes {
+footer {
+    height: 8rem;
+    background-color: #21AEBD;
+    padding: 0 50px;
+    margin-top: auto;
+}
+
+footer h3{
+    color: #FFFFFF;
+}
+        
+.redes {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 20px 0;
     list-style: none;
     padding: 0;
-    }
+}
     
-    .redes li {
+.redes li {
     margin-right: 20px;
-    }
+    height: 40px;
+}
     
-    .redes li:last-child {
+.redes li:last-child {
     margin-right: 0;
-    }
-    
-    .redes img {
-    width: 20px;
-    height: 20px;
-    }
+}
+/*#endregion*/
+
+/*#region*/ /*Estilos galeria*/
+
+.container{
+    display: grid;
+    z-index: -1;
+    grid-template-columns: repeat(4, 1fr);
+}
+.container img{
+    width: 100%;
+    transition: all 300ms;
+    position: relative;
+}
+
+.card{
+    border-radius: 20px;
+    width: 100%;
+    height: 90%;
+    min-height: 50px;
+    padding: 1%;
+}
+
+.container img:hover{
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+/*#endregion*/ 

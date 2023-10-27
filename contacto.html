@@ -1,93 +1,117 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ADN Creaciones 3D</title>
-  </head>
-  <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="productos.html">Productos</a></li>
-                    <li><a href="galeria.html">Galería</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="sobre_nosotros.html">Sobre nosotros</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <h1>ADN Creaciones 3D</h1>
-            <p>Somos una PyME en constante desarrollo y capacitacion, innovando en productos de calidad y diseño. Tenemos todo lo necesario para el desarrollo de tu proyecto 3D</p>
-            <h2>Formulario de contacto</h2> 
-                
-            <form>
-              <fieldset>
-                  <legend>Detalles de contacto</legend>
-       
-                  <p>
-                      <label>
-                          
-                          <br /> Situacion impositiva
-                          <select  name="Status" >
-                              <option>--None--</option>
-                              <option>Consumidor Final</option>
-                              <option>Pyme</option>
-                              <option>Grandes empresas</option>
-                          </select>
-                      </label>
-                  </p>
-       
-                  <p>
-                      <label>Nombre Completo: <input name="nombreCompleto" /></label>
-                  </p>
-                  <p>
-                    Tipo Telefono:
-                    <label><input type="radio" name="tipoTelefono"
-                                  value="Celular" /> 
-                          Celular    
-                      </label>
-                    <label><input type="radio" name="tipoTelefono"
-                                  value="Fijo" /> 
-                          Fijo    
-                      </label>
-                </p>
-                  <p>
-                    <label>Telefono: <input name="Telefono" placeholder="Sin cero sin 15" /></label>
-                </p>
-                
-                  <p>
-                      <label>Email: <input name="Email" placeholder="Ejemplo:Juan@gmail.com" /></label> 
-                  </p>
-                  <p>
-                      <label>Ciudad: <input name="Ciudad" /></label>
-                  </p>
 
-                  <p>
-                      <label>Fecha de Nac:<input type="date"
-                                                  name="Cumpleaños">
-                        </label>
-                  </p>
-       
-                  <p>
-                      <label>
-                          Mensaje :
-                          <br />
-                          <textarea name="Mensaje" cols="30"
-                                    rows="3">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <title>ADN Creaciones 3D</title>
+</head>
+
+<body>
+  <header>
+    <nav class="nav_fondo">
+      <div>
+        <img id="logo_nav" src="./IMG/logo.jpg" alt="logo">
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="sobre_nosotros.html">Sobre nosotros</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>ADN Creaciones 3D</h1>
+    <p>Para comunicarte con nosotros podes seguirnos en nuestras redes o completar el formulario y nos contactaremos a
+      la brevedad</p>
+    <h2>Formulario de contacto</h2>
+
+    <form>
+      <fieldset>
+        <legend>Detalles de contacto</legend>
+
+        <p>
+          <label>
+
+            <br /> Situacion impositiva
+            <select name="Status">
+              <option>--None--</option>
+              <option>Consumidor Final</option>
+              <option>Pyme</option>
+              <option>Grandes empresas</option>
+            </select>
+          </label>
+        </p>
+
+        <p>
+          <label>Nombre Completo: <input name="nombreCompleto" /></label>
+        </p>
+        <p>
+          Tipo Telefono:
+          <label><input type="radio" name="tipoTelefono" value="Celular" />
+            Celular
+          </label>
+          <label><input type="radio" name="tipoTelefono" value="Fijo" />
+            Fijo
+          </label>
+        </p>
+        <p>
+          <label>Telefono: <input name="Telefono" placeholder="Sin cero sin 15" /></label>
+        </p>
+
+        <p>
+          <label>Email: <input name="Email" placeholder="Ejemplo:Juan@gmail.com" /></label>
+        </p>
+        <p>
+          <label>Ciudad: <input name="Ciudad" /></label>
+        </p>
+
+        <p>
+          <label>Fecha de Nac:<input type="date" name="Cumpleaños">
+          </label>
+        </p>
+
+        <p>
+          <label>
+            Mensaje :
+            <br />
+            <textarea name="Mensaje" cols="30" rows="3">
                             </textarea>
-                      </label>
-                  </p>
-       
-                  <p>
-                      <button type="Enviar">Enviar</button>
-                  </p>
-       
-              </fieldset>
-          </form>
+          </label>
+        </p>
 
-        </main>
-        <footer></footer>
-  </body>
+        <p>
+          <button type="Enviar">Enviar</button>
+        </p>
+
+      </fieldset>
+    </form>
+
+  </main>
+  <footer>
+    <div>
+      <h3>Seguinos en nuestras redes</h3>
+      <div>
+        <ul class="redes">
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=100076261230457&mibextid=ZbWKwL" target="blank"><i
+                class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="https://instagram.com/adncreaciones3d?77utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D"
+              target="blank"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="https://wa.me/5491154251770" target="blank"><i class="fa-brands fa-whatsapp"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="https://kit.fontawesome.com/453910d1c8.js" crossorigin="anonymous"></script>
+</body>
+
 </html>
