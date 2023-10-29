@@ -23,6 +23,7 @@ nav{
     width: 100vw;
     position: fixed;
     top: 0;
+    left: 0;
     z-index: 3;
 }
 
@@ -69,6 +70,7 @@ main p{
     align-items: center;
 }
 
+
 /*#endregion*/
 
 /*#region*/ /*Formulario*/
@@ -99,12 +101,14 @@ h2{
     padding: 2rem 0.5rem ;
     padding-bottom: 1rem;
     color: #000000;
+    background-color: rgb(235, 235, 235);
 }
 
 h3{
     padding-top: 1rem;
     padding-left: 2rem;
     padding-right: 0.5rem;
+    background-color: rgb(235, 235, 235);
 }
 
 footer h3{
@@ -128,12 +132,14 @@ img{
 footer {
     height: 8rem;
     background-color: #21AEBD;
-    padding: 0 50px;
+    padding: 1rem 2rem;
     margin-top: auto;
+    margin-bottom: 0;
 }
 
 footer h3{
     color: #FFFFFF;
+    background-color: #21AEBD;
 }
         
 .redes {
@@ -152,6 +158,7 @@ footer h3{
     
 .redes li:last-child {
     margin-right: 0;
+    color:white
 }
 /*#endregion*/
 

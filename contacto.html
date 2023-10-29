@@ -32,7 +32,7 @@
         la brevedad</p>
       <h2 id="form-title">Formulario de contacto</h2>
    </div>
-    <form class="row g-2" action="https://formsubmit.co/537e4a2323ab4c6f9e8fd0fdaf252e00" method="POST">
+    <form class="row g-2" action="https://formsubmit.co/537e4a2323ab4c6f9e8fd0fdaf252e00" method="POST" id="formularioContacto">
           <legend>Detalles de contacto</legend>
 
             <div class="form-group">
@@ -47,7 +47,7 @@
 
             <div class="form-group">
               <label for="nCompleto" class="control-label">Nombre Completo:</label>
-              <input class="form-control" type="text" name="nombreCompleto" id="nCompleto" required/>
+              <input class="form-control" name="nombreCompleto" id="nombreCompleto" required/>
             </div>
 
             <div class="form-group">
@@ -60,27 +60,27 @@
 
             <div class="form-group">
               <label for="telefono" class="control-label">Telefono:</label>
-              <input class="form-control" type="number" name="Telefono" placeholder="Sin cero, sin 15" id="telefono" required/>
+              <input class="form-control" name="telefono" placeholder="Sin cero, sin 15" id="telefono" required/>
             </div>
 
             <div class="form-group">
               <label for="email" class="control-label">Email:</label>
-              <input class="form-control" type="email" name="Email" placeholder="Ejemplo:Juan@gmail.com" id="email" required/>
+              <input class="form-control" name="email" placeholder="Ejemplo:Juan@gmail.com" id="email" required/>
             </div>
 
             <div class="form-group">
               <label for="ciudad" class="control-label">Ciudad:</label>
-              <input class="form-control" type="text" name="Ciudad" id="ciudad" required/>
+              <input class="form-control" name="ciudad" id="ciudad" required/>
             </div>
 
             <div class="form-group">
               <label for="cumpleanios" class="control-label">Fecha de Nac:</label>
-              <input class="form-control" type="date" name="Cumpleaños" id="cumpleanios">
+              <input class="form-control" type="date" name="cumpleanios" id="cumpleanios">
             </div>
 
             <div class="form-group">
               <label for="mensaje" class="control-label">Mensaje:</label>
-              <textarea class="form-control form-text" name="Mensaje" id="mensaje" required></textarea>
+              <textarea class="form-control form-text" name="mensaje" id="mensaje" required></textarea>
             </div>
 
             <div class="mt-5">
@@ -112,5 +112,6 @@
   <script src="https://kit.fontawesome.com/453910d1c8.js" crossorigin="anonymous"></script>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="funciones.js"></script>
 
 </html>
