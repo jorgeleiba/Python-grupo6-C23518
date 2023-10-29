@@ -5,7 +5,7 @@ const timeApiUrl = 'http://worldtimeapi.org/api/ip';
 function getAndDisplayCurrentTime() {
 const timeResultElement = document.getElementById('timeResult');
 
-// Función para realizar una solicitud GET a la API de WorldTimeAPI
+// Función para realizar una solicitud GET para la API de WorldTimeAPI
 function fetchTimeFromAPI() {
     fetch(timeApiUrl)
         .then(response => response.json())
@@ -18,8 +18,8 @@ function fetchTimeFromAPI() {
         console.error('Error al consumir la API de hora:', error);
     });
 }
-// Actualizar la hora cada segundo
+// Actualizar la hora cada 1 seg
 setInterval(fetchTimeFromAPI, 1000);
 }
-// Llamar a ambas funciones para mostrar la hora y el clima
+// Llamar a la función para mostrar la hora
 getAndDisplayCurrentTime();
