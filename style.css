@@ -61,7 +61,7 @@ nav ul li a:hover {
 /*#region*/ /*Estilos del main*/
 
 main{
-    padding: 3%;
+    padding: 2rem;
     padding-top: 25vh;
 }
 main p{
@@ -71,6 +71,19 @@ main p{
 }
 
 
+/*#endregion*/
+
+/*#region*/ /*Estilos productos*/
+
+.video{
+    display: flex;
+    justify-content: center;
+    padding: 4rem;
+}
+
+.producto p{
+    padding: 1rem;
+}
 /*#endregion*/
 
 /*#region*/ /*Formulario*/
@@ -154,11 +167,17 @@ footer h3{
 .redes li {
     margin-right: 20px;
     height: 40px;
+    text-align: center;
 }
     
 .redes li:last-child {
     margin-right: 0;
-    color:white
+    color:white;
+}
+
+.my-icon{
+    color: white;
+    width: 50px;
 }
 /*#endregion*/
 
@@ -217,3 +236,197 @@ img #logo_nav:hover{
     padding:5%
 }
 /*#endregion*/
+
+
+/*Estilos para dispositivos móviles*/
+@media screen and (max-width: 600px) {
+/*#region*/ /*Barra de navegacion*/
+
+.nav_fondo{
+    background-color: #EC66AD;
+}
+
+#logo_nav{
+    width: 6rem;
+}
+
+nav ul{
+    padding-top: 1rem;
+    padding-left: 0.5rem;
+}
+    
+nav ul li a:hover {
+     color: #1C6AB2;
+}
+
+/*#endregion*/
+    
+/*#region*/ /*Estilos del main*/
+
+main{
+    padding-top: 15vh;
+}
+main p{
+    font-size: 1rem;
+}
+
+/*#endregion*/
+
+/*#region*/ /*Estilos productos*/
+
+.video{
+    padding: 1rem;
+}
+
+.producto p{
+    padding: 0.5rem;
+}
+/*#endregion*/
+
+/*#region*/ /*Etiquetas semánticas*/
+
+
+h3{
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+    color: #EC66AD;
+}
+
+footer h3{
+    padding-top: 0.5rem;
+}
+
+img{
+    width: 100%;
+}
+
+/*#endregion*/
+
+/*#region*/ /*estilos del footer*/
+    
+footer {
+    height: 7rem;
+    background-color: #EC66AD;
+    padding: 0.5rem 1rem;
+}
+
+footer h3{
+    background-color: #EC66AD;
+    text-align: center;
+}
+        
+.my-icon{
+    color: white;
+    width: 60px;
+}
+
+/*#endregion*/
+
+/*#region*/ /*Estilos galeria*/
+
+.container{
+    gap: 0;
+}
+
+/*#endregion*/ 
+
+/*#region*/ /*Sobre nosotros*/
+
+.sobre-nosotros p{
+    color: #1C6AB2;
+    background-color: rgb(235, 235, 245);
+    padding:5%
+}
+
+/*#endregion*/
+
+
+}
+
+/* Estilos para pantallas de tablets */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+
+/*#region*/ /*Barra de navegacion*/
+
+.nav_fondo{
+    background-color: #1C6AB2;
+}
+
+nav ul{
+    padding-top: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+nav ul li a:hover {
+     color: #F9CB1E;
+}
+
+/*#endregion*/
+    
+/*#region*/ /*Estilos del main*/
+
+main{
+    padding-top: 20vh;
+}
+main p{
+    font-size: 1.2rem;
+}
+
+/*#endregion*/
+
+/*#region*/ /*Estilos productos*/
+
+.producto p{
+    padding: 0.1rem;
+}
+/*#endregion*/
+
+/*#region*/ /*Etiquetas semánticas*/
+
+footer h3{
+    padding-top: 1rem;
+}
+
+img{
+    width: 80%;
+}
+
+/*#endregion*/
+
+/*#region*/ /*estilos del footer*/
+    
+footer {
+    height: 7rem;
+    background-color: #1C6AB2;
+    padding: 0.5rem 1rem;
+}
+
+footer h3{
+    background-color: #1C6AB2;
+    text-align: center;
+}
+        
+/*#endregion*/
+
+/*#region*/ /*Estilos galeria*/
+
+.container{
+    gap: 0.5rem;
+}
+
+/*#endregion*/ 
+
+/*#region*/ /*Sobre nosotros*/
+
+.sobre-nosotros p{
+    color: #1C6AB2;
+    background-color: rgb(235, 235, 245);
+    padding:5%
+}
+
+/*#endregion*/
+
+
+}
