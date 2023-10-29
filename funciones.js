@@ -57,6 +57,5 @@ document.getElementById("formularioContacto").addEventListener("submit", functio
         event.preventDefault();
         return;
     }
-   
 });
 
