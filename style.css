@@ -213,6 +213,10 @@ footer h3{
     z-index: 1;
 }
 
+main p{
+    padding-bottom: 3rem;
+    padding-left: 1rem;
+}
 /*#endregion*/ 
 
 /*#region*/ /*Animacion de párrafos*/
@@ -283,6 +287,7 @@ main p{
 
 .producto p{
     padding: 0.5rem;
+    padding-left: 1rem;
 }
 /*#endregion*/
 
@@ -343,8 +348,6 @@ footer h3{
 }
 
 /*#endregion*/
-
-
 }
 
 /* Estilos para pantallas de tablets */
@@ -375,6 +378,7 @@ main{
 }
 main p{
     font-size: 1.2rem;
+    padding-left: 1rem;
 }
 
 /*#endregion*/
@@ -383,6 +387,7 @@ main p{
 
 .producto p{
     padding: 0.1rem;
+    padding-left: 1rem;
 }
 /*#endregion*/
 
@@ -430,6 +435,4 @@ footer h3{
 }
 
 /*#endregion*/
-
-
 }
