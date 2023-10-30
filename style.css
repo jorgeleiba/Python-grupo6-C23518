@@ -30,6 +30,8 @@ nav{
 .nav_fondo{
     display: flex;
     background-color: #21AEBD;
+    width: 100%;
+    height: 130px;
 }
 
 #logo_nav{
@@ -43,6 +45,16 @@ nav ul {
     align-items:center;
     list-style: none;
     flex-wrap: wrap;
+}
+
+.nav_ul{
+    padding-left: 2rem;
+    padding-top: -2rem;
+}
+
+.nav_ul_contacto{
+    padding-top: 1rem;
+
 }
     
 nav ul li a {
@@ -90,12 +102,12 @@ main p{
 
 #form-title{
     text-align: center;
-}
+} 
 .row-flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+} 
 
 .flex-column-form {
     flex-basis: 50%;
@@ -149,7 +161,7 @@ img{
 footer {
     height: 8rem;
     background-color: #21AEBD;
-    padding: 1rem 2rem;
+    padding: 0rem 2rem;
     margin-top: auto;
     margin-bottom: 0;
 }
@@ -246,20 +258,32 @@ img #logo_nav:hover{
 
 
 /*Estilos para dispositivos móviles*/
+
 @media screen and (max-width: 600px) {
 /*#region*/ /*Barra de navegacion*/
 
 .nav_fondo{
     background-color: #EC66AD;
+    height: 95px;
 }
 
 #logo_nav{
     width: 6rem;
 }
 
-nav ul{
-    padding-top: 1rem;
-    padding-left: 0.5rem;
+.nav_ul{
+    padding: 8px;
+    padding-top: 12px;
+} 
+
+.nav_ul_contacto{
+    padding: 8px;
+    margin-bottom: 0;
+    padding-bottom: 11px;
+}
+
+nav ul li{
+    height: 1rem;
 }
     
 nav ul li a:hover {
@@ -363,6 +387,11 @@ nav ul{
     padding-top: 1rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+}
+
+.nav_ul_contacto{
+    padding-left: 32px;
+    margin-bottom: 0;
 }
 
 nav ul li a:hover {
